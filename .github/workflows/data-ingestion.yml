@@ -13,7 +13,7 @@ jobs:
       - name: Checkout Data
         uses: actions/checkout@v2.4.2
         with:
-          path: '00_DATA INGESTION/data/Report.json'
+          path: '00_DATA INGESTION/data/'
       - name: read Configuration
         uses: juliangruber/read-file-action@v1.1.4
         id: package
