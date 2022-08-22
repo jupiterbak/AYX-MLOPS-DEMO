@@ -1,4 +1,4 @@
-name: 'simple-test'
+name: 'data-ingestion-tests'
 on: # rebuild any PRs and main branch changes
   pull_request:
   push:
@@ -7,7 +7,7 @@ on: # rebuild any PRs and main branch changes
       - 'releases/*'
 
 jobs:
-  test: # make sure the action works on a clean machine without building
+  data-ingestion-test: # make sure the action works on a clean machine without building
     runs-on: ubuntu-latest
     steps:
       - uses: jupiterbak/ayx-test-reporter@v1.0.2
