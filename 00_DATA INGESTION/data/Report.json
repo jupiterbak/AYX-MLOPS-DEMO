@@ -1,10 +1,10 @@
 [
     {
-        "Name": "Bucket Name",
-        "Value": "ayx-ml-ops-demo"
+        "name": "Bucket Name",
+        "value": "ayx-ml-ops-demo"
     },
     {
-        "Name": "Object Name",
-        "Value": "00_data_ingestion/data/Data_In.csv"
+        "name": "Object Name",
+        "value": "00_data_ingestion/data/Data_In.csv"
     }
 ]
