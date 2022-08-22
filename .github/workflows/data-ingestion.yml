@@ -13,12 +13,12 @@ jobs:
       - name: Checkout Data
         uses: actions/checkout@v2.4.2
         with:
-          path: '00_DATA INGESTION/data/'
+          ref: 'main'
       - name: read Configuration
         uses: juliangruber/read-file-action@v1.1.4
         id: package
         with:
-          path: ./Report.json
+          path: '00_DATA INGESTION/data/Report.json'
       - uses: jupiterbak/ayx-test-reporter@v1.0.2
         with:
           ayx-server-api-url: 'http://ec2-3-66-136-169.eu-central-1.compute.amazonaws.com/webapi/'
