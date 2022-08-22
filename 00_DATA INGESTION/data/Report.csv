@@ -1,4 +1,2 @@
-file path
-Data_inBrillancourt.csv
-Data_inRenens.csv
-Data_inRhodanie.csv
+AWS Connection,Bucket Name,Object Name
+dcm:S3 AWS Jupiter - AWS Jupiter,ayx-ml-ops-demo,00_data_ingestion/data/Data_In.csv
