@@ -1,8 +1,10 @@
 [
     {
-        "JSON": "{\"Name\":\"Bucket Name\",\"Value\":\"ayx-ml-ops-demo\"}"
+        "Name": "Bucket Name",
+        "Value": "ayx-ml-ops-demo"
     },
     {
-        "JSON": "{\"Name\":\"Object Name\",\"Value\":\"00_data_ingestion/data/Data_In.csv\"}"
+        "Name": "Object Name",
+        "Value": "00_data_ingestion/data/Data_In.csv"
     }
 ]
