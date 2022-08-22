@@ -1,10 +1,8 @@
 [
     {
-        "RecordID2": 1,
         "JSON": "{\"Name\":\"Bucket Name\",\"Value\":\"ayx-ml-ops-demo\"}"
     },
     {
-        "RecordID2": 2,
         "JSON": "{\"Name\":\"Object Name\",\"Value\":\"00_data_ingestion/data/Data_In.csv\"}"
     }
 ]
