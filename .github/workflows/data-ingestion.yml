@@ -30,16 +30,18 @@ jobs:
       - name: Upload the Test Results
         uses: actions/upload-artifact@v4
         with:
+            overwrite: true
             path: |
               *.tgz
               results.json
       - name: Generate a Mocha Test Report
-        uses: dorny/test-reporter@v1
+        uses: dorny/test-reporter@v2
         if: success() || failure()    
         with:
           name: Data Ingestion Test Results            
           path: results.json            
           reporter: mocha-json
+          fail-on-error: false
   generate-features: # with the data configuration generate features
     needs: data-ingestion-test
     runs-on: ubuntu-latest
@@ -64,16 +66,18 @@ jobs:
       - name: Upload the Generation Results
         uses: actions/upload-artifact@v4
         with:
+            overwrite: true
             path: |
               *.tgz
               results.json
       - name: Generate a Mocha Report
-        uses: dorny/test-reporter@v1
+        uses: dorny/test-reporter@v2
         if: success() || failure()    
         with:
           name: Feature Generation Results            
           path: results.json            
           reporter: mocha-json
+          fail-on-error: false
   test-features: # with the data configuration generate features
     needs: generate-features
     runs-on: ubuntu-latest
@@ -98,13 +102,15 @@ jobs:
       - name: Upload the feature test results
         uses: actions/upload-artifact@v4
         with:
+            overwrite: true
             path: |
               *.tgz
               results.json
       - name: Generate a Mocha Report
-        uses: dorny/test-reporter@v1
+        uses: dorny/test-reporter@v2
         if: success() || failure()    
         with:
           name: Feature Test Results            
           path: results.json            
           reporter: mocha-json
+          fail-on-error: false
