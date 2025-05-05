@@ -22,9 +22,9 @@ jobs:
       - name: Execute Alteryx Tests
         uses: jupiterbak/ayx-test-reporter@v1.0.2
         with:
-          ayx-server-api-url: 'http://ec2-3-66-136-169.eu-central-1.compute.amazonaws.com/webapi/'
-          ayx-server-client-id: '8DA78CE09C0E5D1abf4927846637f9a02e196b8eff52b61f03246ad16ad2c81125ef4a80920db80'
-          ayx-server-client-secret: '1f675a0f8d2c572ddd02005a3396fe7e89706fe4a39e0d5f39cf9b6463aecec8'
+          ayx-server-api-url: 'http://ec2-18-184-0-23.eu-central-1.compute.amazonaws.com/webapi/'
+          ayx-server-client-id: '8DD8BBF92DAD13469d0e6fa6b5c4e8c1d1f980e130842b7718b95a4f17664860816fffabe5860de'
+          ayx-server-client-secret: '4d2571855980947fee7917480a2903dba8fb4bcdd3500fb95c85013549888e1e'
           collection-to-test: '00_Data_Ingestion'
           args: "${{ steps.package.outputs.content }}"
       - name: Upload the Test Results
@@ -56,9 +56,9 @@ jobs:
       - name: Generate Features by run workflows on the collection 02_Feature_Generation
         uses: jupiterbak/ayx-test-reporter@v1.0.2
         with:
-          ayx-server-api-url: 'http://ec2-3-66-136-169.eu-central-1.compute.amazonaws.com/webapi/'
-          ayx-server-client-id: '8DA78CE09C0E5D1abf4927846637f9a02e196b8eff52b61f03246ad16ad2c81125ef4a80920db80'
-          ayx-server-client-secret: '1f675a0f8d2c572ddd02005a3396fe7e89706fe4a39e0d5f39cf9b6463aecec8'
+          ayx-server-api-url: 'http://ec2-18-184-0-23.eu-central-1.compute.amazonaws.com/webapi/'
+          ayx-server-client-id: '8DD8BBF92DAD13469d0e6fa6b5c4e8c1d1f980e130842b7718b95a4f17664860816fffabe5860de'
+          ayx-server-client-secret: '4d2571855980947fee7917480a2903dba8fb4bcdd3500fb95c85013549888e1e'
           collection-to-test: 'W_01_Feature_Generation'
           args: "${{ steps.package.outputs.content }}"
       - name: Upload the Generation Results
@@ -90,9 +90,9 @@ jobs:
       - name: Tests the features qualities by running workflows of the collection 02_Feature_Engineering
         uses: jupiterbak/ayx-test-reporter@v1.0.2
         with:
-          ayx-server-api-url: 'http://ec2-3-66-136-169.eu-central-1.compute.amazonaws.com/webapi/'
-          ayx-server-client-id: '8DA78CE09C0E5D1abf4927846637f9a02e196b8eff52b61f03246ad16ad2c81125ef4a80920db80'
-          ayx-server-client-secret: '1f675a0f8d2c572ddd02005a3396fe7e89706fe4a39e0d5f39cf9b6463aecec8'
+          ayx-server-api-url: 'http://ec2-18-184-0-23.eu-central-1.compute.amazonaws.com/webapi/'
+          ayx-server-client-id: '8DD8BBF92DAD13469d0e6fa6b5c4e8c1d1f980e130842b7718b95a4f17664860816fffabe5860de'
+          ayx-server-client-secret: '4d2571855980947fee7917480a2903dba8fb4bcdd3500fb95c85013549888e1e'
           collection-to-test: '02_Feature_Engineering'
           args: "${{ steps.package.outputs.content }}"
       - name: Upload the feature test results
