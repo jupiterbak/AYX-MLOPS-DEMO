@@ -28,7 +28,7 @@ jobs:
           collection-to-test: '00_Data_Ingestion'
           args: "${{ steps.package.outputs.content }}"
       - name: Upload the Test Results
-        uses: actions/upload-artifact@v2.2.3
+        uses: actions/upload-artifact@v4
         with:
             path: |
               *.tgz
@@ -62,7 +62,7 @@ jobs:
           collection-to-test: 'W_01_Feature_Generation'
           args: "${{ steps.package.outputs.content }}"
       - name: Upload the Generation Results
-        uses: actions/upload-artifact@v2.2.3
+        uses: actions/upload-artifact@v4
         with:
             path: |
               *.tgz
@@ -96,7 +96,7 @@ jobs:
           collection-to-test: '02_Feature_Engineering'
           args: "${{ steps.package.outputs.content }}"
       - name: Upload the feature test results
-        uses: actions/upload-artifact@v2.2.3
+        uses: actions/upload-artifact@v4
         with:
             path: |
               *.tgz
